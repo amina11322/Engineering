@@ -328,5 +328,14 @@
     typeFilter.addEventListener('change', filterOpportunities);
     fieldFilter.addEventListener('change', filterOpportunities);
   </script>
+  <script>
+  // Toggle detailed view for each opportunity
+  document.querySelectorAll('.opp-title').forEach(title => {
+    title.addEventListener('click', () => {
+      const parent = title.closest('.opportunity');
+      parent.classList.toggle('active');
+    });
+  });
+</script>
 </body>
 </html>
