@@ -223,3 +223,65 @@ footer {
 .opp-details a:hover {
     text-decoration: underline;
 }
+/* ========== MOBILE RESPONSIVENESS ========== */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 10px 0;
+  }
+
+  .header-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .filters select {
+    width: 100%;
+  }
+
+  .opportunity {
+    padding: 14px;
+  }
+
+  .opp-title {
+    font-size: 18px;
+  }
+
+  .opp-details {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p, li {
+    font-size: 15px;
+  }
+
+  .site-title {
+    font-size: 24px;
+  }
+
+  .article-title {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .article-content {
+    padding: 16px;
+  }
+}
