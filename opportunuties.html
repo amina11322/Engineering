@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STEM Opportunities</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="opportunities.css">
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <h1 class="site-title">Engineering Voices</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="lead.html">Lead Contributors</a></li>
+          <li><a href="submit.html">Submit</a></li>
+          <li><a href="opportunities.html" class="active">Opportunities</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Explore STEM Opportunities</h2>
+      <p>Here you can find exciting opportunities in STEM, including competitions, internships, awards, and more.</p>
+
+      <!-- Filters -->
+      <div class="filters">
+        <select id="typeFilter">
+          <option value="all">All Types</option>
+          <option value="competition">Competition</option>
+          <option value="volunteering">Volunteering</option>
+          <option value="internship">Internship</option>
+          <option value="summer">Summer Program</option>
+        </select>
+
+        <select id="fieldFilter">
+          <option value="all">All Fields</option>
+          <option value="math">Math</option>
+          <option value="cs">Computer Science</option>
+          <option value="physics">Physics</option>
+          <option value="general">General STEM</option>
+        </select>
+      </div>
+
+      <!-- Opportunities List -->
+      <div class="opportunity-list">
+        <div class="opportunity" data-type="competition" data-field="physics">
+          <h3 class="opp-title">International Astronomy and Astrophysics Competition (IAAC)</h3>
+          <div class="opp-details">
+            <p>The IAAC is a global competition that challenges students to solve astronomy problems at various levels.</p>
+            <p><strong>Eligibility:</strong> Students aged 14 to 18 from all countries are welcome to apply. There is also a junior category for students under 14.</p>
+            <p><strong>Benefits:</strong> Certificates, awards, and the chance to connect with an international STEM community.</p>
+            <a href="https://iaac.space" target="_blank">Visit Website</a>
+          </div>
+        </div>
+
+        <div class="opportunity" data-type="research" data-field="general">
+          <h3 class="opp-title">Lumiere Research Scholar Program</h3>
+          <div class="opp-details">
+            <p>One-on-one research mentorship with PhD scholars for high school students across STEM and humanities.</p>
+             <p><strong>Eligibility:</strong> High school students (grades 9–12), typically aged 14–18. International applicants are accepted.</p>
+            <p><strong>Benefits:</strong> Mentored research, academic paper publication potential, and prestigious experience for college applications.</p>
+            <a href="https://www.lumiere.education/" target="_blank">Visit Website</a>
+          </div>
+        </div>
+
+        <div class="opportunity" data-type="research" data-field="general">
+          <h3 class="opp-title">Pioneer Academics</h3>
+          <div class="opp-details">
+            <p>Academic research opportunities for high school students with university professors.</p>
+            <p><strong>Eligibility:</strong> High school students (grades 10–12) with strong academic records and English proficiency. Open to international students.</p>
+            <p><strong>Benefits:</strong> College-level mentorship, transcript certification, and publication potential.</p>
+            <a href="https://pioneeracademics.com/" target="_blank">Visit Website</a>
+          </div>
+        </div>
+
+        <div class="opportunity" data-type="research" data-field="general">
+          <h3 class="opp-title">Horizon Academic</h3>
+          <div class="opp-details">
+            <p>An advanced online research program for high school students in a wide range of academic disciplines.</p>
+            <p><strong>Eligibility:</strong> Students aged 15–18 with a strong academic background. Applications are open globally.</p>
+            <p><strong>Benefits:</strong> Customized mentorship, original research paper, and college application support.</p>
+            <a href="https://www.horizoninspires.com/" target="_blank">Visit Website</a>
+          </div>
+        </div>
+        <div class="opportunity" data-type="competition" data-field="cs">
+  <h3 class="opp-title">American Computer Science League (ACSL)</h3>
+  <div class="opp-details">
+    <p>An annual programming and algorithm contest with online rounds and final events.</p>
+    <p><strong>Eligibility:</strong> High school students worldwide.</p>
+    <p><strong>Benefits:</strong> Team and individual awards; recognition for coding skills.</p>
+    <a href="https://www.acsl.org/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="cs">
+  <h3 class="opp-title">USACO (USA Computing Olympiad)</h3>
+  <div class="opp-details">
+    <p>Algorithmic coding contest with multiple divisions, leading to training camps.</p>
+    <p><strong>Eligibility:</strong> High school students globally.</p>
+    <p><strong>Benefits:</strong> Scholarship opportunities and national recognition.</p>
+    <a href="http://www.usaco.org/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="general">
+  <h3 class="opp-title">Genius Olympiad</h3>
+  <div class="opp-details">
+    <p>International competition focusing on environmental research, art, and writing.</p>
+    <p><strong>Eligibility:</strong> Students aged 14–18 globally.</p>
+    <p><strong>Benefits:</strong> Medals, scholarships, and international exposure.</p>
+    <a href="https://geniusolympiad.org/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="general">
+  <h3 class="opp-title">Conrad Challenge</h3>
+  <div class="opp-details">
+    <p>Innovation competition where teams propose business-ready solutions to real-world problems.</p>
+    <p><strong>Eligibility:</strong> Students aged 13–18 worldwide.</p>
+    <p><strong>Benefits:</strong> Scholarships, mentorship, and prototype funding.</p>
+    <a href="https://www.conradchallenge.org/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="math">
+  <h3 class="opp-title">MathWorks Math Modeling Challenge (M³)</h3>
+  <div class="opp-details">
+    <p>Teams solve real-world problems using math modeling in a timed online competition.</p>
+    <p><strong>Eligibility:</strong> Juniors and seniors in U.S., England, Wales.</p>
+    <p><strong>Benefits:</strong> Up to $100,000 in scholarships and national recognition.</p>
+    <a href="https://m3challenge.siam.org/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="enviro">
+  <h3 class="opp-title">Envirothon</h3>
+  <div class="opp-details">
+    <p>Team-based environmental science contest with fieldwork and presentations.</p>
+    <p><strong>Eligibility:</strong> High school teams; varies by region.</p>
+    <p><strong>Benefits:</strong> Scholarships, awards, and environmental advocacy experience.</p>
+    <a href="https://www.envirothon.org/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="biology">
+  <h3 class="opp-title">Genes in Space</h3>
+  <div class="opp-details">
+    <p>Team-based contest to design DNA experiments for space missions.</p>
+    <p><strong>Eligibility:</strong> Students aged 13–18 worldwide.</p>
+    <p><strong>Benefits:</strong> Winning experiment launched to ISS, recognition.</p>
+    <a href="https://genesinspace.org/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="bio">
+  <h3 class="opp-title">USA Biology Olympiad (USABO)</h3>
+  <div class="opp-details">
+    <p>Rigorous exam-based biology competition culminating in international team selection.</p>
+    <p><strong>Eligibility:</strong> U.S. high school students.</p>
+    <p><strong>Benefits:</strong> Training camp and international competition exposure.</p>
+    <a href="https://www.usabo.org/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="engineering">
+  <h3 class="opp-title">Shell Eco‑marathon</h3>
+  <div class="opp-details">
+    <p>Teams design and build ultra-efficient vehicles to compete in energy challenges.</p>
+    <p><strong>Eligibility:</strong> Students aged 9–19 in teams of 3–6.</p>
+    <p><strong>Benefits:</strong> Awards, technical experience, global networking.</p>
+    <a href="https://www.shell.com/energy-and-innovation/shell-ecomarathon.html" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="cs">
+  <h3 class="opp-title">Microsoft Imagine Cup</h3>
+  <div class="opp-details">
+    <p>Global software contest where students solve real-world issues using technology.</p>
+    <p><strong>Eligibility:</strong> Teams aged 16+ enrolled in high school or higher.</p>
+    <p><strong>Benefits:</strong> Cash prizes, mentorship, and global finals.</p>
+    <a href="https://imaginecup.microsoft.com/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="robotics">
+  <h3 class="opp-title">World Robot Olympiad (WRO)</h3>
+  <div class="opp-details">
+    <p>International robotics competition emphasizing teamwork and creative design.</p>
+    <p><strong>Eligibility:</strong> Teams of 2–3 students up to age 19.</p>
+    <p><strong>Benefits:</strong> Medals, global final exposure, hands-on learning.</p>
+    <a href="http://www.worldrobotolympiad.org/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="engineering">
+  <h3 class="opp-title">STEM Racing (F1 in Schools)</h3>
+  <div class="opp-details">
+    <p>Teams design miniature race cars using CAD/CAM and compete internationally.</p>
+    <p><strong>Eligibility:</strong> Students aged 9–19 in teams of 3–6.</p>
+    <p><strong>Benefits:</strong> International finals, technical and leadership skills.</p>
+    <a href="https://stemracing.com/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="space">
+  <h3 class="opp-title">NSS Space Settlement Contest</h3>
+  <div class="opp-details">
+    <p>Design a free‑floating space settlement in teams or individually.</p>
+    <p><strong>Eligibility:</strong> Students up to Grade 12 internationally.</p>
+    <p><strong>Benefits:</strong> Scholarships, conference presentations, global recognition.</p>
+    <a href="https://space.nss.org/nss-space-settlement-contest" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="space">
+  <h3 class="opp-title">International Space Settlement Design Competition (ISSDC)</h3>
+  <div class="opp-details">
+    <p>High school team-based contest simulating aerospace design proposals.</p>
+    <p><strong>Eligibility:</strong> Teams worldwide, age 13–19.</p>
+    <p><strong>Benefits:</strong> Finals at NASA, scholarship prizes, industry mentoring.</p>
+    <a href="https://spaceset.org/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="space">
+  <h3 class="opp-title">Rothblatt Space Settlement Contest</h3>
+  <div class="opp-details">
+    <p>Design a sustainable space habitat for the ISDC conference.</p>
+    <p><strong>Eligibility:</strong> Students under 19 worldwide.</p>
+    <p><strong>Benefits:</strong> Scholarships, presentation slots, space-industry recognition.</p>
+    <a href="https://isdc.nss.org/special_events/rothblatt-space-settlement-contest/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="general">
+  <h3 class="opp-title">A*STAR Talent Search (Singapore)</h3>
+  <div class="opp-details">
+    <p>Annual research competition in science & technology.</p>
+    <p><strong>Eligibility:</strong> Students aged 15–21 participating via SSEF.</p>
+    <p><strong>Benefits:</strong> Scholarships, mentorship, and national recognition.</p>
+    <a href="https://www.a-star.edu.sg/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="physics">
+  <h3 class="opp-title">International Young Physicists’ Tournament (IYPT)</h3>
+  <div class="opp-details">
+    <p>Team-based “Physics World Cup” with collaborative problem-solving rounds.</p>
+    <p><strong>Eligibility:</strong> Physics teams from high schools worldwide.</p>
+    <p><strong>Benefits:</strong> International travel, global network, critical thinking.</p>
+    <a href="https://iypt.org/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="aero">
+  <h3 class="opp-title">Solar Car Challenge</h3>
+  <div class="opp-details">
+    <p>Students design and race solar-powered cars in national and cross-country events.</p>
+    <p><strong>Eligibility:</strong> High school teams in grades 9–12 in the U.S.</p>
+    <p><strong>Benefits:</strong> STEM experience, awards, and sustainability leadership.</p>
+    <a href="https://www.solarcarchallenge.org/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="ocean">
+  <h3 class="opp-title">National Ocean Sciences Bowl (NOSB)</h3>
+  <div class="opp-details">
+    <p>Quiz-bowl format contest on oceanography and marine science topics.</p>
+    <p><strong>Eligibility:</strong> U.S. high school teams in regional qualifiers.</p>
+    <p><strong>Benefits:</strong> Scholarships, national finals, ocean science exposure.</p>
+    <a href="https://www.nosb.org/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="research">
+  <h3 class="opp-title">International Research Olympiad (IRO)</h3>
+  <div class="opp-details">
+    <p>Global interdisciplinary research competition with data-analysis rounds.</p>
+    <p><strong>Eligibility:</strong> Students aged 13–18 worldwide.</p>
+    <p><strong>Benefits:</strong> Medals, media features, global recognition.</p>
+    <a href="https://internationalresearcholympiad.com/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<div class="opportunity" data-type="competition" data-field="biology">
+  <h3 class="opp-title">BioGENEius Challenge</h3>
+  <div class="opp-details">
+    <p>Biotech research competition organized by IBBI Foundation at regional/international level.</p>
+    <p><strong>Eligibility:</strong> High school students globally.</p>
+    <p><strong>Benefits:</strong> Mentorship, scholarships, and exposure in biotech.</p>
+    <a href="https://www.biogeniuschallenge.org/" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Engineering Voices. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const typeFilter = document.getElementById('typeFilter');
+    const fieldFilter = document.getElementById('fieldFilter');
+    const opportunities = document.querySelectorAll('.opportunity');
+
+    function filterOpportunities() {
+      const selectedType = typeFilter.value;
+      const selectedField = fieldFilter.value;
+
+      opportunities.forEach(opp => {
+        const type = opp.getAttribute('data-type');
+        const field = opp.getAttribute('data-field');
+
+        const matchesType = (selectedType === 'all' || selectedType === type);
+        const matchesField = (selectedField === 'all' || selectedField === field);
+
+        opp.style.display = (matchesType && matchesField) ? 'block' : 'none';
+      });
+    }
+
+    typeFilter.addEventListener('change', filterOpportunities);
+    fieldFilter.addEventListener('change', filterOpportunities);
+  </script>
+</body>
+</html>
