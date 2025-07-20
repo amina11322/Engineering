@@ -285,3 +285,42 @@ footer {
     padding: 16px;
   }
 }
+/* Events Highlight Styles */
+.events {
+  background-color: #fff;
+  padding: 40px 0;
+}
+.events h2 {
+  color: #004080;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* make it touch‑swipeable with CSS scroll‑snap */
+.event-carousel {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+.event-cards {
+  display: flex;
+  gap: 20px;
+}
+.event-card {
+  flex: 0 0 260px;           /* fixed width */
+  scroll-snap-align: start;  /* snap to start of each card */
+  background-color: #e6f0ff;
+  border: 1px solid #004080;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: grab;
+}
+.event-card:active {
+  cursor: grabbing;
+}
+.event-card:hover {
+  transform: translateY(-5px);
+  background-color: #cce0ff;
+}

@@ -21,7 +21,6 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="articles.html" class="active">Articles</a></li>
-                    <li><a href="lead.html">Lead Contributors</a></li>
                     <li><a href="submit.html">Submit</a></li>
                     <li><a href="opportunities.html">Opportunities</a></li>
                 </ul>
@@ -287,43 +286,48 @@
         </div>
     </footer>
 
-    <script>
-        const categoryLinks = document.querySelectorAll('.category-list a');
-        const titles = document.querySelectorAll('.article-title');
-        const articles = document.querySelectorAll('.article-content');
+   <script>
+  const categoryLinks = document.querySelectorAll('.category-list a');
+  const titles        = document.querySelectorAll('.article-title');
+  const articles      = document.querySelectorAll('.article-content');
 
-        categoryLinks.forEach(link => {
-            link.addEventListener('click', e => {
-                e.preventDefault();
-                const category = link.dataset.category;
+  // Category filter (unchanged)
+  categoryLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const category = link.dataset.category;
 
-                // Highlight active category
-                categoryLinks.forEach(l => l.classList.remove('active'));
-                link.classList.add('active');
+      // Highlight active
+      categoryLinks.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
 
-                // Filter titles
-                titles.forEach(title => {
-                    const hasCategory = title.classList.contains(category);
-                    if (category === 'all' || hasCategory) {
-                        title.style.display = 'block';
-                    } else {
-                        title.style.display = 'none';
-                    }
-                });
+      // Show/hide titles
+      titles.forEach(title => {
+        const hasCategory = title.classList.contains(category);
+        title.style.display = (category === 'all' || hasCategory) ? 'block' : 'none';
+      });
 
-                // Hide article details on category switch
-                articles.forEach(a => a.style.display = 'none');
-            });
-        });
+      // Hide open articles
+      articles.forEach(a => a.style.display = 'none');
+    });
+  });
 
-        titles.forEach(title => {
-            title.addEventListener('click', () => {
-                const id = title.dataset.id;
-                articles.forEach(article => {
-                    article.style.display = (article.id === id) ? 'block' : 'none';
-                });
-            });
-        });
-    </script>
+  // Article click → show + gentle scroll if offscreen
+  titles.forEach(title => {
+    title.addEventListener('click', () => {
+      const id = title.dataset.id;
+
+      articles.forEach(article => {
+        if (article.id === id) {
+          article.style.display = 'block';
+          article.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); // gentle, minimal scroll
+        } else {
+          article.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
